@@ -23,4 +23,9 @@ def caesar_cipher(message: str, shift: int):
             # Save non alphabet characters
         else:
             result += char
-    return result
+    print(result)
+
+user_message = input('Message  to encrypt: ')
+user_shift_message = int(input('Shift key (integer): '))
+
+caesar_cipher(user_message, user_shift_message)
